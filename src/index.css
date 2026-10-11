@@ -1,0 +1,16 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root{--bg:251 247 243;--surface:255 255 255;--ink:35 22 28;--mut:117 100 108;--line:236 226 224;--brand:155 28 63;--soft:250 232 237;--gold:224 165 38;--ok:22 128 61;--bad:190 38 50;--warn:166 100 0}
+.dark{--bg:19 12 16;--surface:30 20 26;--ink:246 238 240;--mut:170 150 158;--line:54 38 46;--brand:238 112 148;--soft:58 28 40;--gold:242 193 78;--ok:74 200 120;--bad:255 120 128;--warn:244 180 70}
+html{scroll-behavior:smooth} body{@apply bg-bg text-ink font-sans antialiased}
+@layer components{
+ .card{@apply bg-surface border border-line rounded-2xl shadow-card}
+ .btn{@apply inline-flex items-center justify-center gap-2 rounded-xl bg-brand text-white font-semibold px-4 py-2.5 text-sm transition active:scale-[.97] hover:brightness-110 disabled:opacity-50 disabled:pointer-events-none}
+ .btn-ghost{@apply bg-soft text-brand hover:brightness-95}
+ .btn-ok{@apply bg-ok} .btn-bad{@apply bg-bad} .btn-sm{@apply px-3 py-1.5 text-xs rounded-lg}
+ .input{@apply w-full rounded-xl border border-line bg-surface px-3.5 py-2.5 text-sm outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/10 placeholder:text-mut/60}
+ .label{@apply block text-xs font-bold uppercase tracking-wider text-mut mb-1.5}
+ .chip{@apply inline-flex items-center gap-1 rounded-full bg-soft text-brand px-2.5 py-1 text-xs font-semibold}
+}
+.mesh{background:radial-gradient(60% 50% at 15% 10%,rgb(var(--brand)/.35),transparent 70%),radial-gradient(50% 50% at 90% 20%,rgb(var(--gold)/.30),transparent 70%),radial-gradient(60% 60% at 60% 100%,rgb(var(--brand)/.18),transparent 70%)}
+.skel{background:linear-gradient(90deg,rgb(var(--line)) 25%,rgb(var(--soft)) 50%,rgb(var(--line)) 75%);background-size:200% 100%}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
