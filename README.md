@@ -1,6 +1,16 @@
 # AmritaCollab
 
 Website: amritacollab2.vercel.app
+login credentials for testing :
+
+faculty login :
+id : s_rammohan@cb.amrita.edu
+pass : Faculty@123
+
+lab assistant login :
+id : lab@amritacollab.test
+pass : Lab@12345
+
 
 **A campus collaboration platform for students, faculty, and laboratory staff at Amrita.**
 
