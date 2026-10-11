@@ -1,5 +1,7 @@
 # AmritaCollab
 
+Website: amritacollab2.vercel.app
+
 **A campus collaboration platform for students, faculty, and laboratory staff at Amrita.**
 
 AmritaCollab brings equipment booking, faculty mentorship requests, project-team formation, and resource sharing into one place. Students can discover opportunities and submit requests; staff can review requests through role-specific workflows.
